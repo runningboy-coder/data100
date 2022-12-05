@@ -13,7 +13,7 @@ def head(filename, lines=5):
     from itertools import islice
     with open(filename, "r") as f:
         return list(islice(f, lines))
-    
+
 
 def fetch_and_cache(data_url, file, data_dir="data", force=False):
     """
@@ -174,7 +174,7 @@ def make_scatter_plot(df_dict, x_col, y_col, hue=None, include=None, title=None,
         plt.ylabel(ylabel)
     if not legend:
         plt.gca().get_legend().remove()
-        
+
 
 def make_bar_plot(counts_df, title=None, xlabel=None, ylabel=None, ylog=False, legend=True):
     """
